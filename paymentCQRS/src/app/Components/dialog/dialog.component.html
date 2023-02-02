@@ -1,0 +1,59 @@
+<h1 mat-dialog-title>Add Account</h1>
+<div mat-dialog-content class="mt-1">
+  <form [formGroup]="accountForm">
+    <mat-form-field appearance="outline">
+      <mat-label>Account Number</mat-label>
+      <input matInput formControlName="accountNumber" placeholder="accountNumber" />
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Balance</mat-label>
+      <input matInput formControlName="balance" placeholder="balance" />
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Bank Name</mat-label>
+      <mat-select formControlName="bankName" placeholder="bankName">
+        <mat-option value="HDFC_BANK">HDFC_BANK</mat-option>
+        <mat-option value="SBI">SBI</mat-option>
+        <mat-option value="CANARA_BANK">CANARA_BANK</mat-option>
+        <mat-option value="ICICI_BANK">ICICI_BANK</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Account Type</mat-label>
+      <mat-select formControlName="accountType" placeholder="accountType">
+        <mat-option value="SAVING">SAVING</mat-option>
+        <mat-option value="CURRENT">CURRENT</mat-option>
+        <mat-option value="FIXED_DEPOSITE">FIXED DEPOSITE</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Status</mat-label>
+      <mat-select formControlName="status" placeholder="status">
+        <mat-option value="CREATED">CREATED</mat-option>
+        <mat-option value="UPDATED">UPDATED</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </form>
+</div>
+
+<div mat-dialog-action [align]="'end'">
+  <button mat-raised-button class="bg-danger" id="button" mat-dialog-close>Close</button>
+  <button
+    mat-raised-button
+    class="bg-primary"
+    style="margin-left: 8px"
+    mat-dialog-close
+    (click)="addAccount()"
+  >
+    Save
+  </button>
+  <button
+    mat-raised-button
+    class="bg-primary"
+    style="margin-left: 8px"
+    mat-dialog-close
+    (click)="updateAccount()"
+  >
+    Update
+  </button>
+</div>

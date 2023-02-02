@@ -1,0 +1,13 @@
+.container {
+    text-align: center;
+}
+
+.alert-danger {
+    background-color: red;
+}
+.alert {
+    color: white;
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+}

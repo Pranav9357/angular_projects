@@ -1,0 +1,16 @@
+.submit-form {
+  max-width: 400px;
+  margin: auto;
+}
+#name {
+  margin-top: 20px;
+}
+#age {
+  margin-top: 20px;
+}
+.age {
+  margin-top: 20px;
+}
+.btn {
+  margin-top: 20px;
+}

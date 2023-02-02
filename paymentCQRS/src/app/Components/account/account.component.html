@@ -1,0 +1,32 @@
+<mat-toolbar color="primary">
+  <button
+    mat-icon-button
+    class="example-icon"
+    aria-label="Example icon-button with menu icon"
+  >
+    <mat-icon>payment</mat-icon>
+  </button>
+  <span>PaymentCQRS</span>
+  <span class="span">AccountList</span>
+  <span class="span">PaymentList</span>
+  <span class="example-spacer"></span>
+  <button
+    type="button"
+    data-bs-toggle="modal"
+    data-bs-target="#exampleModal"
+    class="btn btn-danger"
+  >
+    Make Payment
+  </button>
+  <button
+    type="button"
+    data-bs-toggle="modal"
+    data-bs-target="#add-account"
+    class="btn btn-danger"
+    style="margin-left: 10px"
+  >
+    Add Account
+  </button>
+</mat-toolbar>
+
+<app-table-account></app-table-account>

@@ -1,0 +1,19 @@
+<form #frm = "ngForm" (ngSubmit) = "updateInfo(frm)">
+    <div class="">
+        <input type="text" name="location" value="" ngModel>
+        <button type="submit" name="button" class="button">Add Info</button>
+    </div>
+</form><br>
+
+<button type="submit" name="button" (click) = 'getInfoReceive1()'>Employee1</button>
+<ul class="list-group">
+    <li *ngFor = "let info of infoReceive1" class="list-group-info">{{info}}</li>
+</ul>
+<button type="submit" name="button" (click) = 'getInfoReceive2()'>Employee2</button>
+<ul class="list-group">
+    <li *ngFor = "let info of infoReceive2" class="list-group-info">{{info}}</li>
+</ul>
+<button type="submit" name="button" (click) = 'getInfoReceive3()'>Employee3</button>
+<ul class="list-group">
+    <li *ngFor = "let info of infoReceive3" class="list-group-info">{{info}}</li>
+</ul>
